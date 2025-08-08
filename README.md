@@ -1,70 +1,48 @@
-# React + TypeScript + Vite
+# 🌱 Society of Agricultural Robotics Engineers — Events Registrar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **SARE Events Registrar** is a simple yet powerful event registration platform designed for the **Society of Agricultural Robotics Engineers (SARE)** to manage participant sign-ups for webinars, workshops, and conferences.  
 
-Currently, two official plugins are available:
+This project provides:
+- A clean, responsive webpage showcasing event details.
+- An easy-to-use registration form for collecting participant **full name**, **phone number**, and **email address**.
+- Automatic storage of registrations into a **Google Spreadsheet** for easy tracking.
+- Automatic **confirmation email** to each participant after registration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 📌 Features
+- **Event Details Section**
+  - Displays event topic, date, time, and description.
+  - Includes information about the **facilitator/instructor**.
+  - Clean, modern UI for a professional look.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Registration Form**
+  - Collects:
+    - Full Name
+    - Phone Number
+    - Email Address
+  - Validates inputs to prevent incomplete submissions.
+  - Connects to Google Apps Script for:
+    - **Data storage in Google Sheets**
+    - **Sending confirmation emails** with event details.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Responsive Design**
+  - Works seamlessly on desktop, tablet, and mobile devices.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+- **Frontend:** HTML5, CSS3, JavaScript (Vanilla JS)
+- **Backend/Data Handling:** Google Apps Script (No server required)
+- **Database:** Google Spreadsheet
+- **Email Service:** Google `MailApp` (via Apps Script)
+
+
+## 📂 Project Structure
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-"# Event-Registrar" 
+sare-events-registrar/
+│
+├── index.html       # Main event landing and registration page
+├── style.css        # Styling for the page
+├── script.js        # Form validation and submission logic
+├── README.md        # Project documentation
+└── apps-script.gs   # Google Apps Script backend for Sheets + Emails
