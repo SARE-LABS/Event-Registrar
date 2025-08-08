@@ -1,4 +1,5 @@
 import { About } from "../Components/about/Index"
+import { Belt } from "../Components/belt/Index"
 import { Footer } from "../Components/footer"
 import { Instructor } from "../Components/instructor/Index"
 import { Landing } from "../Components/landing/Index"
@@ -15,6 +16,9 @@ export const Home = () => {
         <Instructor />
         <Footer />
       </div>
+      <Belt />
+    {/* Dummy space */}
+    <div className="h-52 md:h-32"></div>
     </div>
   )
 }
