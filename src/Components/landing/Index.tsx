@@ -8,7 +8,7 @@ import { Details } from "./Details"
 
 export const Landing = () => {
   return (
-    <div className="w-full h-max flex flex-col">
+    <div className="w-full h-max flex flex-col relative">
       {/* Dummy images */}
       <div className="w-max absolute h-max left-[50%] hidden md:block top-[25%] scale-[0.7]">
         <img src={GitHubIcon} alt="Placeholder" className="object-cover" />

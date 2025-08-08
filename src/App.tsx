@@ -3,7 +3,7 @@ import { Home } from "./pages/Home"
 function App() {
 
   return (
-    <div className={`h-max bg-[#F3F4F6] flex items-center justify-center w-full`}>
+    <div className={`min-h-screen bg-[#F3F4F6] w-full`}>
       <Home />
     </div>
   )

@@ -3,7 +3,7 @@ export const Social = () => {
    const socials = [
   {
     name: "Twitter",
-    link: "#",
+    link: "https://x.com/sare_eng",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
         <defs>
@@ -21,7 +21,7 @@ export const Social = () => {
   },
   {
     name: "Instagram",
-    link: "#",
+    link: "https://www.instagram.com/sare_eng0/",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <defs>
@@ -39,7 +39,7 @@ export const Social = () => {
   },
     {
     name: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/company/society-of-agricultural-robotics-engineers/",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512">
         <defs>
@@ -57,7 +57,7 @@ export const Social = () => {
   },
   {
     name: "youTube",
-    link: "#",
+    link: "https://www.youtube.com/@SAgriculturalRoboticsEngineers",
     icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
   <defs>
     <linearGradient id="gradYouTube" x1="0%" y1="0%" x2="100%" y2="0%">

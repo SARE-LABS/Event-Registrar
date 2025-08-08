@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { RegisterButton } from "../button/Register"
 import { ShareButton } from "../button/Share"
+import SARE from "../../assets/images/S.A.R.E. is Cooking 2.svg";
 
 export const Belt = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -31,14 +32,14 @@ export const Belt = () => {
 
   return (
     <div 
-      className={`w-full h-max flex items-center justify-between flex-col md:flex-row gap-4 md:px-24 px-4 py-4 md:py-2 rounded-2xl bg-[#FFFFFF] fixed bottom-0 z-50 transition-transform duration-300 ease-in-out  shadow-2xl ${
+      className={`w-full h-max flex items-center justify-between flex-col md:flex-row gap-4 md:px-16 px-4 py-4 md:py-2 rounded-2xl bg-[#FFFFFF] fixed bottom-0 z-50 transition-transform duration-300 ease-in-out  shadow-2xl ${
         isVisible ? 'translate-y-0' : 'translate-y-full'
       }`}
     >
-        <div className="h-max flex justify-between items-center md:px-24 px-4 py-4">
-            <div>
-                <img src="" alt="" />
-                <img src="" alt="" />
+        <div className="h-max flex justify-between items-center md:px-0 px-4 py-4 gap-4">
+            <div className="w-[100px] h-[100px] relative">
+                <img src={SARE} alt="S.A.R.E. is Cooking" className="object-contain w-full h-full absolute top-0 rounded-lg" />
+                <img src={SARE} alt="S.A.R.E. is Cooking" className="object-contain w-full h-full absolute top-0 rounded-lg rotate-[-8deg] shadow-2xl" />
             </div>
             <div className="h-max flex flex-col gap-1">
                 <small className="text-[12px] font-normal text-[#4B5563]">Register now for:</small>

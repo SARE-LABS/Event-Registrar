@@ -3,7 +3,7 @@ export const Social = () => {
    const socials = [
   {
     name: "Twitter",
-    link: "#",
+    link: "https://x.com/obikoya_adebayo",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256">
         <defs>
@@ -21,7 +21,7 @@ export const Social = () => {
   },
   {
     name: "Instagram",
-    link: "#",
+    link: "https://www.instagram.com/obycodez/",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <defs>
@@ -39,7 +39,7 @@ export const Social = () => {
   },
     {
     name: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/adebayo-obikoya-557b0626a/",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512">
         <defs>

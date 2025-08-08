@@ -17,7 +17,9 @@ export const Instructor = () => {
             <h1 className="text-[28px] font-normal">Obikoya Adebayo</h1>
             <div className="flex gap-1 text-[14px]">
               <span className="font-medium">Backend Engineer</span>
-              <span className="text-[#67B5DC] font-light">@Postpaddy</span>
+              <span className="text-[#67B5DC] font-light">
+                <a href="https://www.linkedin.com/company/postpaddy/">@Postpaddy</a>
+              </span>
             </div>
           </div>
           <div className="">
