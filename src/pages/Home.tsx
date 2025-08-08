@@ -7,11 +7,14 @@ import { Nav } from "../Components/nav/Index"
 export const Home = () => {
   return (
     <div className="w-full min-h-screen flex flex-col overflow-x-hidden">
-        <Nav/>
-        <Landing/>
-        <About/>
-        <Instructor/>
-        <Footer/>
+      <Nav />
+      <div className="w-full h-max flex flex-col md:px-12 px-4 md
+      :pt-10 pt-4">
+        <Landing />
+        <About />
+        <Instructor />
+        <Footer />
+      </div>
     </div>
   )
 }
