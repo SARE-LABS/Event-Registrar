@@ -24,7 +24,7 @@ export const Landing = () => {
         <h1 className="text-[#1F2937] text-[36px] md:text-[48px] font-medium">How to GIT Started</h1>
         <small className="text-[#4B5563] text-[16px] md:text-[14px] font-normal">A beginners guide on the Easiest Way to Connect Your IDE to GitHub</small>
       </div>
-      <div className="w-full h-max min-h-[40px] flex justify-center items-center md:justify-between mt-4 flex-col md:flex-row ">
+      <div className="w-full h-max min-h-[40px] flex justify-center items-center md:justify-between mt-4 flex-col gap-4 md:gap-0 md:flex-row ">
         <Timer/>
         <div className="w-max h-max flex gap-4">
           <RegisterButton/>

@@ -1,7 +1,7 @@
 
 export const Nav = () => {
   return (
-    <div className={`md:p-6 p-4 bg-[#F3F4F6] flex w-full justify-between items-center h-[80px] md:pr-24 sticky top-0 z-50`}>
+    <div className={`bg-[#F3F4F6] flex w-full justify-between items-center h-[80px] md:px-16 md:py-12 px-4 py-4 sticky top-0 z-50`}>
         <div className="w-max h-max">
             <img src="SARE_Full_Logo.svg" alt="" className="w-[14rem] md:w-full" />
         </div>

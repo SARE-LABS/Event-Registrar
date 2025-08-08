@@ -8,7 +8,28 @@ export const Timer = () => {
     days: 0,
     hours: 0,
     minutes: 0,
+    seconds: 0,
   });
+
+  const timeStamp = [
+    {
+      time: timeLeft.days,
+      text: "Days"
+    },
+    {
+      time: timeLeft.hours,
+      text: "Hours"
+
+    },
+    {
+      time: timeLeft.minutes,
+      text: "Mintues"
+    },
+    {
+      time: timeLeft.seconds,
+      text: "Seconds"
+    }
+  ]
 
   useEffect(() => {
     const updateTimer = () => {
@@ -16,7 +37,7 @@ export const Timer = () => {
       const diff = targetDate.getTime() - now.getTime();
 
       if (diff <= 0) {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0 });
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
         return;
       }
 
@@ -27,12 +48,15 @@ export const Timer = () => {
       const minutes = Math.floor(
         (diff % (1000 * 60 * 60)) / (1000 * 60)
       );
+      const seconds = Math.floor(
+        (diff % (1000 * 60)) / (1000)
+      )
 
-      setTimeLeft({ days, hours, minutes });
+      setTimeLeft({ days, hours, minutes, seconds });
     };
 
     updateTimer(); // run once immediately
-    const interval = setInterval(updateTimer, 60 * 1000); // update every minute
+    const interval = setInterval(updateTimer, 1000); // update every minute
 
     return () => clearInterval(interval);
   }, []);
@@ -41,7 +65,20 @@ export const Timer = () => {
     <div className="flex items-center md:pl-4 gap-2 ">
       <img src={ClockGif} alt="Clock" className="w-10 h-10 md:mr-2" />
       <div className="text-center text-[#1F2937] font-medium md:text-[48px] text-[48px] flex ">
-        <p className="flex justify-center items-center">{timeLeft.days} : {timeLeft.hours} : {timeLeft.minutes}</p>
+
+        <div className="flex gap-1">
+          {
+            timeStamp.map((time, index) => (
+              <div key={index} className="flex gap-2">
+                <div className="flex flex-col">
+                  <span>{time.time}</span>
+                  <span className="text-[12px]">{time.text}</span>
+                </div>
+                {index < timeStamp.length - 1 && <span>:</span>}
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
   );

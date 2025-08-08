@@ -15,10 +15,10 @@ export const Details = () => {
     }
   ]
   return (
-    <div className="w-full p-3 flex flex-col md:flex-row gap-2 rounded-2xl bg-[#67B5DC] justify-between items-center shadow-xl">
+    <div className="w-full p-3 flex flex-col md:flex-row gap-3 rounded-2xl bg-[#67B5DC] justify-between items-center shadow-xl">
       {
         details.map((detail, index) => (
-          <div key={index} className="flex items-center justify-center gap-2 bg-[#FFFFFF] rounded-2xl px-4 py-2 h-[60px] w-full md:w-[30%]">
+          <div key={index} className="flex items-center justify-center gap-2 bg-[#FFFFFF] rounded-2xl px-4 py-2 h-[60px] w-full">
             <span className="text-[48px] text-[#67B5DC]">{detail.icon}</span>
             <span className="text-[24px] font-medium">{detail.location || detail.time || detail.date}</span>
           </div>
