@@ -117,7 +117,6 @@ const handleSubmit = async (e: React.FormEvent) => {
   setIsSubmitting(true);
 
   try {
-    // Use FormData instead of URLSearchParams for better compatibility
     const submitData = new FormData();
     submitData.append('fullName', formData.fullName);
     submitData.append('email', formData.email);
@@ -126,10 +125,8 @@ const handleSubmit = async (e: React.FormEvent) => {
     const response = await fetch(SCRIPT_URL, {
       method: "POST",
       body: submitData,
-      // Remove Content-Type header to let browser set it automatically for FormData
     });
 
-    // Check if response is ok first
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
