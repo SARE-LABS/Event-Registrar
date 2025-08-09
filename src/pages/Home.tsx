@@ -17,8 +17,9 @@ export const Home = () => {
         <Footer />
       </div>
       <Belt />
-    {/* Dummy space */}
-    <div className="h-52 md:h-32"></div>
+
+      {/* Dummy space */}
+      <div className="h-52 md:h-32"></div>
     </div>
   )
 }
