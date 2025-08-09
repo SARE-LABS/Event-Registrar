@@ -4,18 +4,18 @@ import Success from "../../assets/gifs/Success.gif"
 
 export const Toast: React.FC<ToastProps> = ({ message, type }) => {
   const baseStyle =
-    "fixed bottom-4 right-4 h-[100px] w-[400px] flex items-center gap-3 p-4 rounded-lg shadow-lg transition-opacity duration-300 bg-[#FFFFFF] z-50";
+    "fixed top-4 md:right-4 right-2 h-[100px] w-[400px] flex justify-between items-center gap-3 p-4 rounded-lg shadow-lg transition-opacity duration-300 bg-[#FFFFFF] z-50";
 
   const typeStyles = [
     {
       type: "success",
       style: "text-[#0FC99F]",
-      icon: <Success />,
+      icon: Success,
     },
     {
       type: "error",
       style: "text-[#EF4444]",
-      icon: <Error />,
+      icon: Error,
     },
   ];
 
@@ -23,15 +23,15 @@ export const Toast: React.FC<ToastProps> = ({ message, type }) => {
 
   return (
     <div className={`${baseStyle} ${styleConfig?.style}`}>
-      <div>
+      <div className="flex flex-col w-[60%] h-full justify-center">
         <h2 className="text-[12px] font-medium">
           {type.charAt(0).toUpperCase() + type.slice(1)}
         </h2>
-        <p className="text-[15px] font-medium text-[#1F2937]">{message}</p>
+        <p className="md:text-[15px] text-[10px] font-medium text-[#1F2937]">{message}</p>
       </div>
       {styleConfig?.icon && (
-        <div className="ml-4">
-          {styleConfig.icon}
+        <div className="ml-4 w-[40%] h-full flex justify-end items-center">
+          <img src={styleConfig.icon} alt={type} className="h-10 w-10" />
         </div>
       )}
     </div>
