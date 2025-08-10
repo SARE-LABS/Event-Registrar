@@ -37,9 +37,9 @@ export const Belt = () => {
       }`}
     >
         <div className="h-max flex justify-between items-center md:px-0 px-4 py-4 gap-4">
-            <div className="w-[100px] h-[100px] relative">
-                <img src={SARE} alt="S.A.R.E. is Cooking" className="object-contain w-full h-full absolute top-0 rounded-lg" />
-                <img src={SARE} alt="S.A.R.E. is Cooking" className="object-contain w-full h-full absolute top-0 rounded-lg rotate-[-8deg] shadow-2xl" />
+            <div className="w-[200px] h-[100px] relative">
+                <img src={SARE} alt="S.A.R.E. is Cooking" className="object-contain w-full h-auto absolute top-0 rounded-lg" />
+                <img src={SARE} alt="S.A.R.E. is Cooking" className="object-contain w-full h-auto absolute top-0 rounded-lg rotate-[-8deg] shadow-2xl" />
             </div>
             <div className="h-max flex flex-col gap-1">
                 <small className="text-[12px] font-normal text-[#4B5563]">Register now for:</small>
