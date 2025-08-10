@@ -1,7 +1,7 @@
 import { RegisterButton } from "../button/Register"
 import { Timer } from "../timer/Index"
 import GitHubIcon from "../../assets/icons/GitHub_Icon.svg"
-import VScodeIcon from "../../assets/icons/VSCode_Icon.svg"
+import VScodeIcon from "../../assets/icons/VScode_Icon.svg"
 import DocumentIcon from "../../assets/icons/Document_Icon.svg"
 import { ShareButton } from "../button/Share"
 import { Details } from "./Details"
