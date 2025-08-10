@@ -4,7 +4,7 @@ import Success from "../../assets/gifs/Success.gif"
 
 export const Toast: React.FC<ToastProps> = ({ message, type }) => {
   const baseStyle =
-    "fixed top-4 md:right-4 right-2 h-[100px] w-[400px] flex justify-between items-center gap-3 p-4 rounded-lg shadow-lg transition-opacity duration-300 bg-[#FFFFFF] z-50";
+    "fixed top-4 md:right-4 md:h-[100px] h-[80px] w-[300px] right-2 md:w-[400px] flex justify-between items-center gap-3 p-4 rounded-lg shadow-lg transition-opacity duration-300 bg-[#FFFFFF] z-50";
 
   const typeStyles = [
     {
