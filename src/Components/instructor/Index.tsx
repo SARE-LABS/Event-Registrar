@@ -1,4 +1,4 @@
-import InstructorImage from "../../assets/images/Instructor.svg"; // Placeholder for instructor image
+import InstructorImage from "../../assets/images/Instructor.jpg"; // Placeholder for instructor image
 import { Social } from "./Social";
 export const Instructor = () => {
   return (
@@ -9,7 +9,7 @@ export const Instructor = () => {
         </h1>
       </div>
       <div className="w-full h-max flex flex-col md:flex-row gap-4 justify-center items-center">
-        <div className="w-full md:w-[300px] h-auto flex justify-center items-center rounded-lg overflow-hidden">
+        <div className="w-full md:w-[300px] h-[300px] flex justify-center items-center rounded-lg overflow-hidden">
           <img src={InstructorImage} alt="Instructor" className="w-full h-auto object-contain" />
         </div>
         <div className="w-full md:w-[400px] h-max flex flex-col gap-4">
