@@ -21,7 +21,7 @@ export const Form = () => {
   const { showToast } = useToast();
 
   // Your Google Apps Script Web App URL
-  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx6KpWf2tRwkru5kWJhs1qR-W5jKHil5jvmGdPyoMV8Z3O6qHSlcdrNvl6Ikir3tBwIcA/exec';
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyYBony71eJg_MnrSRQvh-MYKwEisItEuOkvOMLn-XhH7dtvBuhoDTH8sd-dauZbnFfhw/exec';
 
   useEffect(() => {
     if (isModalOpen) {
