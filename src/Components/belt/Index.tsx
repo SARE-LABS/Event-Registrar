@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { RegisterButton } from "../button/Register"
 import { ShareButton } from "../button/Share"
-import SARE from "../../assets/images/S.A.R.E. is Cooking 2.svg";
+import SARE from "../../assets/images/How to GIT Started.jpg";
 
 export const Belt = () => {
   const [isVisible, setIsVisible] = useState(false)
