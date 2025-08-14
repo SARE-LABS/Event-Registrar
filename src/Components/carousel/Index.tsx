@@ -2,10 +2,10 @@ import { useRef, useState, useEffect } from "react";
 // import { ChevronLeft, ChevronRight } from "lucide-react"; // optional icons
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
-import SARE from "../../assets/images/S.A.R.E. is Cooking 2.svg";
+import SARE from "../../assets/images/How to GIT Started.jpg";
 
 export const Carousel = () => {
-  const images = [SARE, SARE, SARE, SARE, SARE, SARE, SARE]; // Added more images
+  const images = [SARE]; // Added more images
   const scrollRef = useRef<HTMLDivElement>(null);
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(false);
