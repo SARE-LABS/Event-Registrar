@@ -44,7 +44,7 @@ export const Carousel = () => {
       {/* Scroll container */}
       <div
         ref={scrollRef}
-        className="flex overflow-x-auto gap-4 scroll-smooth no-scrollbar"
+        className="flex overflow-x-auto gap-4 scroll-smooth no-scrollbar justify-center"
       >
         {images.map((image, index) => (
           <div
