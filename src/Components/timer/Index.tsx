@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ClockGif from "../../assets/gifs/Clock.gif";
 
 export const Timer = () => {
-  const targetDate = new Date("2025-08-16T20:00:00"); // Target event date
+  const targetDate = new Date("2025-08-23T20:00:00"); // Target event date
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
