@@ -3,9 +3,10 @@ import { useRef, useState, useEffect } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 import SARE from "../../assets/images/How to GIT Started.jpg";
+import SARE2 from "../../assets/images/flyerTwo.jpg";
 
 export const Carousel = () => {
-  const images = [SARE]; // Added more images
+  const images = [SARE, SARE2]; // Added more images
   const scrollRef = useRef<HTMLDivElement>(null);
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(false);
